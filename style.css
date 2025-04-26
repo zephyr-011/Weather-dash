@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+.search-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    width: 70%;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #6a11cb;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.weather-info {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.temp img {
+    width: 60px;
+    height: 60px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.details div {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.forecast {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.forecast-card {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 15px;
+    min-width: 100px;
+    flex: 0 0 auto;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+}
+
+.forecast-card img {
+    margin: 10px 0;
+}
+
